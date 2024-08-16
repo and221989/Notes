@@ -1,0 +1,41 @@
+Unix Commands -
+
+1. ls - for listing all the files.
+2. pwd -> check the present working directory
+3. cd folder_name -> chage the folder
+4. vi amol.txt -> create amol.txt and openin vi editor
+5. cat > amol.txt -> Create new file amol.txt
+6. cat amol.txt -> Command used to display file content
+7. How to join two files and stores the output in new file?
+-> cat file1.txt file2.txt > newfile.txt
+8.How to rename a file?
+-> mv file1.txt newname.txt
+9.How to list files in sub-directories?
+-> ls -R
+10. How to list hidden iles
+-> ls -a or ls -alt
+11. How to delete file?
+-> rm file.txt
+12. How to remove directory wit6336**9+++363+++3h files?
+-> rm -rf foldername
+13. How to copy ile from one location to another?
+-> cp newfile ./foldername
+14. How to copy contents of a folder?
+-> cp -R folder1/ ./newfolder
+15. How do you find all the processes that are currently running?
+-> ps -f
+16. How to kill a process?
+-> kill -9 pid(id of the process)
+17. What would you use to view contents of large log file?
+-> tail -10 filename ( display last 10 lines of a file )
+18. How do you start a job in Background?
+-> bg%1 (1 is our job id)
+19. How do you know if remote host is alive or not?
+-> ping hostname
+20. How to copy from one server to local system?
+-> scp -S 
+21. How to search word inside a file?
+-> grep word filename  
+22. What is "chmod" command?
+-> used to change the permission of file or directory. 
+   chmod 777 filename.txt

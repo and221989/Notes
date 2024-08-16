@@ -1,0 +1,50 @@
+1.what is search context in selenium?
+Ans - It is a root interface in Selenium. SearchContext has two subinterfaces: WebDriver and WebElement.
+WebDriver is again implemented by different classes. e.g ChromeDriver, IEDriver, FireFox Driver, EdgeDriver.
+
+2.How to arrange the order of the Test Cases? e.g 100 tc given for automation. ( priority of the test cases )
+Ans - Automation to reduce Time and Effort. 
+Hight Priority to - data driven test cases. ( tc which requires lot of test data )
+Second - Regression test cases. ( test cases which need to execute for every build cycle.)
+Third - rest all the test cases.
+
+3.If any Select tag in not available then how to handle it?
+Ans - If it is auto suggest then enter 3 chars, then will get list of elements which are visible. store list in List. Iterate it using for loop.
+match it (text) with  the element, then click on it.
+
+4.How to write code for Screenshot?
+Ans - 
+TakesScreenshot  ts = (TakesScreenshot) driver;
+	 File source= ts.getScreenshotAs(OutputType.FILE);
+	 File destination=new File("C:\\Eclipse\\Amazon_POM\\Screenshots\\onTestStart\\"+result.getName()+Math.random()+".png");
+		try 
+			{
+				FileUtils.copyFile(source, destination);
+			} 
+		catch (IOException e) 
+			{
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+
+TakesScreenshot is Interface and WebDriver is another Interface. both are not related.
+these both are implemented by ChromeDriver. so we need to TypeCasting as driver is an instance of WebDriver Interface.
+
+5.Use of Actions class? also Action Interface?
+
+6.Explain Build and Perform method for Actions class.
+Ans - 
+There are 2 things. 1.Creating an Action and 2.Performthe Action 
+
+Actions a = new Actions(driver);
+a.movetoelement(element).build().perform();
+		
+if we remove perform() method then action will not complete. 
+
+Actions a = new Actions(driver);
+Action act = a.movetoelement(element).build(); -> return typeis Action type Variable
+-------
+-------
+-------- few steps and then we perform action on it.
+act.perform();
+

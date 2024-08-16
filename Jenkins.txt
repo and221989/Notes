@@ -1,0 +1,5 @@
+java -jar C:\Users\DELL\Downloads\Jenkins\jenkins.war 
+
+maven 
+cd C:\Eclipse\Automation_Maven
+mvn clean test
